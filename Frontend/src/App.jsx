@@ -47,7 +47,7 @@ function App() {
     setError('');
     setRoadmap('');
     try {
-      const res = await axios.post('http://localhost:5000/generate', { goal, level });
+      const res = await axios.post('https://eduaid.onrender.com/generate', { goal, level });
       setRoadmap(res.data.roadmap);
     } catch (err) {
       setError("Error generating roadmap! Please try again later.");
