@@ -1,0 +1,8 @@
+# Ignore environment files in the backend
+.env
+.env.local
+.env.production
+
+# Ignore node_modules and other build files in the backend
+node_modules/
+*.log
